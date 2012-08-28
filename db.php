@@ -88,11 +88,10 @@
 			throw new Exception("Parameter error");
 		}
 		
-		public static function lasInsertId(){
+		public static function lastInsertId(){
 			$conn = self::getDB();
 			return $conn->lastInsertId();
 		}
-		
 	}
 
 ?>
